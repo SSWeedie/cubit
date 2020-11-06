@@ -4,7 +4,6 @@ abstract class CounterState {}
 
 @injectable
 class CounterInitial extends CounterState {
-
   final int number;
 
   CounterInitial(this.number);
@@ -12,7 +11,6 @@ class CounterInitial extends CounterState {
 
 @injectable
 class IncreaseNumber extends CounterState {
-
   final int number;
 
   IncreaseNumber(this.number);
@@ -20,7 +18,6 @@ class IncreaseNumber extends CounterState {
 
 @injectable
 class DecreaseNumber extends CounterState {
-
   final int number;
 
   DecreaseNumber(this.number);

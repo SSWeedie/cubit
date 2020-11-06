@@ -9,12 +9,12 @@ class CounterCubit extends Cubit<CounterState> {
 
   var _count = 0;
 
-  void increaseNumber(){
+  void increaseNumber() {
     _count++;
     emit(IncreaseNumber(_count));
   }
 
-  void decreaseNumber(){
+  void decreaseNumber() {
     _count--;
     emit(DecreaseNumber(_count));
   }
