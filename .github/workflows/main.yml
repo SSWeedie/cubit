@@ -19,3 +19,5 @@ jobs:
         with:
           artifacts: "lib/*.apk"
           token: 05e0d3320cfa5bd59aadc492d14abdd32a156145
+          commit: master
+          tag: v1.0.1
