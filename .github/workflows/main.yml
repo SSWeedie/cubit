@@ -9,13 +9,13 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: '8.x'
-      - uses: sunssouth/flutter-action@v1
+      - uses: subosito/flutter-action@v1
         with:
           flutter-version: '1.22.0'
       - run: flutter pub get
       - run: flutter build apk --debug
       - name: Push APK to Releases
-        uses: sunssouth/release-action@v1
+        uses: ncipollo/release-action@v1
         with:
           artifacts: "lib/*.apk"
           token: 05e0d3320cfa5bd59aadc492d14abdd32a156145
